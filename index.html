@@ -11,7 +11,8 @@
 <body>
 	
 	<main>
-		<h1>Colour Palette</h1>
+		<h1 style = "display: inline;">Colour Palette</h1>
+		<img src = "icons/color-palette-svgrepo-com.svg" id = "logo">
 		<p>
 			Press [<button class="generator-button">Space</button>] to generate a new palette
 		</p>
@@ -107,13 +108,13 @@
             <button class = "copybutton" id = "current-color-copy">Copy</button>
         </div>
         <div>
-        <input id = "red" type = "range" style="background: red;" max = "255", min ="0" value = "234"><span id = "red-span">234</span>
+        <input id = "red" type = "range" style="background: rgba(177, 2, 2, 0.501);" max = "255", min ="0" value = "234"><span id = "red-span">234</span>
 
-        <input id = "green" type = "range" style="background: green" max = "255" min = "0" value = "128"><span id ="green-span">128</span>
+        <input id = "green" type = "range" style="background: rgba(0, 128, 0, 0.501)" max = "255" min = "0" value = "128"><span id ="green-span">128</span>
 
-        <input id = "blue" type = "range" style="background: blue;" max = "255" min = "0" value = "134"><span id = "blue-span">134</span>
+        <input id = "blue" type = "range" style="background: rgba(0, 0, 255, 0.501);" max = "255" min = "0" value = "134"><span id = "blue-span">134</span>
 
-        <input id = "alpha" type = "range" style="background: linear-gradient(to bottom right, white, black);" max = "1" min = "0" step="0.01" value = 1><span id="alpha-span">1</span>
+        <input id = "alpha" type = "range" style="background:rgba(1, 0, 0, 0.317);" max = "1" min = "0" step="0.01" value = 1><span id="alpha-span">1</span>
         </div>
         
     </div>

@@ -149,7 +149,16 @@ clrpkr.oninput = function() {
     clrpkr_copy_button.value = clrpkr.value;
 	clrpkr_select_button.value = clrpkr.value;
 };
-
+function RGBAToHexA(rgba, forceRemoveAlpha = false) {
+	return "#" + rgba.replace(/^rgba?\(|\s+|\)$/g, '')
+	  .split(',')
+	  .filter((string, index) => !forceRemoveAlpha || index !== 3)
+	  .map(string => parseFloat(string))
+	  .map((number, index) => index === 3 ? Math.round(number * 255) : number)
+	  .map(number => number.toString(16))
+	  .map(string => string.length === 1 ? "0" + string : string)
+	  .join("")
+  }
 function hexToRGB(hex, alphaYes) {
     hex = hex.replace(/^#/, '');
 
@@ -184,7 +193,7 @@ clrpkr_copy_button.onclick = function() {
 let copy_current_color = document.getElementById("current-color-copy");
 
 copy_current_color.onclick = function(){
-	navigator.clipboard.writeText(currentRGBAColor)
+	navigator.clipboard.writeText(RGBAToHexA(currentRGBAColor))
         .then(() => {
             console.log('Color value copied to clipboard');
         })

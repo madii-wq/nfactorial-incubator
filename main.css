@@ -22,7 +22,15 @@ main {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
+#logo{
+	width: 50px;
+	height: 50px;
+	margin-left: 2rem;
+	transition: transform 5s;
+}
+#logo:hover{
+	transform: rotate(360deg);
+}
 h1 {
 	color: var(--dark);
 	font-size: 3rem;
@@ -93,7 +101,6 @@ button {
 	user-select: none;
 	cursor: pointer;
 }
-
 .lock-toggle {
 	opacity: 0.5;
 	transition: 0.4s linear;
@@ -144,7 +151,6 @@ button {
 #clrpkr::-webkit-color-swatch{
     border-radius: 15px;
     border: none;
-	background: aqua;
 }
 .newrow{
     display: flex;
@@ -193,6 +199,9 @@ span{
     border-radius: 100px;
     transition: transform 1s;
 }
+.copybutton:active{
+	background-color: var(--dark);
+}
 #clrpkr-selector{
     background-color: black;
     width: 100px;
@@ -206,6 +215,9 @@ span{
 #clrpkr-selector:hover{
 	text-shadow: 0 0 5px white;
     transform: scale(1.1) translateX(5px) translateY(-5px);
+}
+#clrpkr-selctor:active{
+	background-color: var(--dark);
 }
 .copybutton:hover{
 	text-shadow: 0 0 5px white; 
