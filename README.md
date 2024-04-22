@@ -4,7 +4,7 @@ A web application that helps users learn and create color palettes. Users should
 
 ## Technologies:
 
-| Rank | THING-TO-RANK |
+| Rank | Technologies  |
 |-----:|---------------|
 |     1| JavaScript    |
 |     2| HTML          |
