@@ -1,5 +1,5 @@
 # Color Palette Explorer
-
+## `nfactorial` Madiyar Temirgaliev
 A web application that helps users learn and create color palettes. Users should be able to: Select individual colors from a color picker or from predefined color palettes. Adjust the hue, saturation and brightness of each color. Create complementary or similar color schemes based on the chosen base color. Save created color palettes and share them with other users.
 
 ## Technologies:
