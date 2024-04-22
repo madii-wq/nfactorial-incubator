@@ -4,6 +4,12 @@ A web application that helps users learn and create color palettes. Users should
 
 ## Technologies:
 
+| Rank | THING-TO-RANK |
+|-----:|---------------|
+|     1| JavaScript    |
+|     2| HTML          |
+|     3| CSS           |
+
 `JavaScript, HTML, CSS`
 
 ## Preview:
